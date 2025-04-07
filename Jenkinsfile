@@ -14,10 +14,10 @@ pipeline {
     stages {
         stage('Install Node.js & Dependencies') {
             steps {
-                script {
-                    sh "nvm install ${env.NODE_VERSION}"
-                    sh "nvm use ${env.NODE_VERSION}"
-                }
+                // script {
+                 //   sh "nvm install ${env.NODE_VERSION}"
+                  //  sh "nvm use ${env.NODE_VERSION}"
+               // }
                 sh 'npm install'
             }
         }
